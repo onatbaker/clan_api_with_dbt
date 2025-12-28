@@ -142,6 +142,16 @@ Deployment flow:
 
 ![delete_clan_that_doesnt_exist.png](docs/clan-case-study-screenshots/delete_clan_that_doesnt_exist.png)
 
+### Tests
+
+Basic unit tests are included for the Clan API routes.
+
+Run tests locally:
+
+```
+PYTHONPATH=api pytest
+```
+
 ## Part 2 — Analytics, dbt & Visualization
 
 ![part_2_sequence_diagram.png](docs/clan-case-study-screenshots/part_2_sequence_diagram.png)

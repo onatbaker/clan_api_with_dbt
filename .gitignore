@@ -225,3 +225,6 @@ part2_analytics/**/target/
 part2_analytics/**/logs/
 part2_analytics/**/dbt_packages/
 part2_analytics/**/.user.yml
+
+test.db
+*.db
