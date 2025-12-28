@@ -69,8 +69,23 @@ http://localhost:8080
 uvicorn app.main:app --reload
 ```
 
----
+### Database Seeding
 
+The database can be seeded with initial clan data from the provided CSV.
+
+Docker (local development):
+
+```
+docker compose up --build -d
+```
+```
+docker compose exec api python -m app.scripts.seed_clans_from_csv
+```
+
+Notes:
+- Seeding is idempotent
+- The seeding script checks for an existing clan by name before insertion
+  - Re-running the script does not create duplicates
 ---
 
 ### Database Access
