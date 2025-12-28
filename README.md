@@ -124,21 +124,45 @@ Deployment flow:
 
 ---
 
-## API Endpoints:
+## API Endpoints
+
+### Health Check
+Verifies that the API service is running and reachable.
 
 ![check_health_endpoint.png](docs/clan-case-study-screenshots/check_health_endpoint.png)
 
+### Create Clan
+Creates a new clan with a unique name and associated region.
+
 ![create_clan_endpoint.png](docs/clan-case-study-screenshots/create_clan_endpoint.png)
+
+### List Clans (After Creation)
+Returns all existing clans after successful creation.
 
 ![get_all_clans_after_creating.png](docs/clan-case-study-screenshots/get_all_clans_after_creating.png)
 
+### Search Clan by Name
+Performs a case-insensitive partial match search (minimum 3 characters).
+
 ![search_for_a_clan.png](docs/clan-case-study-screenshots/search_for_a_clan.png)
+
+### Delete Clan
+Deletes a clan by its UUID.
 
 ![delete_a_clan.png](docs/clan-case-study-screenshots/delete_a_clan.png)
 
+### List Clans (After Deletion)
+Confirms that the deleted clan no longer exists.
+
 ![get_all_clans_after_deleting.png](docs/clan-case-study-screenshots/get_all_clans_after_deleting.png)
 
+### Delete with Invalid UUID
+Returns validation error for malformed clan IDs.
+
 ![delete_invalid_clan_id.png](docs/clan-case-study-screenshots/delete_invalid_clan_id.png)
+
+### Delete Non-Existent Clan
+Returns 404 when attempting to delete a clan that does not exist.
 
 ![delete_clan_that_doesnt_exist.png](docs/clan-case-study-screenshots/delete_clan_that_doesnt_exist.png)
 
@@ -311,8 +335,6 @@ We also verified dimensional consistency:
     - Country
 
 ![lookerstudio.png](docs/clan-case-study-screenshots/lookerstudio.png)
-
----
 
 ---
 
