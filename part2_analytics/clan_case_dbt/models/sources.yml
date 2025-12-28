@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: clan_case_raw
+    tables:
+      - name: user_daily_metrics_raw
